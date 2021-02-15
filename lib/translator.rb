@@ -5,12 +5,12 @@ def load_library(emoticons)
   emotes = YAML.load_file(emoticons)
   final_emoticons = {}
 
-  final_emoticons["get_emoticon"] = {}
-  final_emoticons["get_meaning"] = {}
+  final_emoticons["english"] = {}
+  final_emoticons["japanese"] = {}
 
   emotes.each do |english_word, description|
-    final_emoticons["get_emoticon"][description.first] = description.last
-    final_emoticons["get_meaning"][description.last] = english_word
+    final_emoticons["english"][description.first] = description.last
+    final_emoticons["japanese"][description.last] = english_word
   end
   final_emoticons
 end
