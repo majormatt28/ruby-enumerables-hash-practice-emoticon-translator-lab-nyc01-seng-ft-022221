@@ -12,7 +12,6 @@ def load_library(path)
     final_emoticons[key] = {}
     final_emoticons[key][:english] = description[0]
     final_emoticons[key][:japanese] = description[1]
-    binding.pry
   end
   final_emoticons
 end
