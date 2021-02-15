@@ -9,7 +9,7 @@ def load_library(path)
   final_emoticons["japanese"] = {}
 
   emotes.each do |english_word, description|
-    
+    final_emoticons[english_word] = {}
   end
   final_emoticons
 end
