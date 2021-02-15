@@ -10,7 +10,7 @@ def load_library(path)
 
   emotes.each do |english_word, description|
     final_emoticons[english_word] = {}
-    final_emoticons[english_word][:english] = ""
+    final_emoticons[english_word][:english] = " "
   end
   final_emoticons
 end
