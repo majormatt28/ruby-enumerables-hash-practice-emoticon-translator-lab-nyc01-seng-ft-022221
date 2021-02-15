@@ -17,7 +17,8 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emoticon)
-  load_library(path).each do |key, description|
+  final_emojis = load_library(path)
+  final_emojis.each do |key, description|
     if description[:japanese] == emoticon
       return key
     end
@@ -25,5 +26,9 @@ def get_japanese_emoticon(path, emoticon)
 end
 
 def get_english_meaning(path, emoticon)
-  load_library(path)
+  final_emojis = load_library(path)
+  final_emojis.each do |key, description|
+    if description[:english] == emoticon
+      return key
+  end
 end
