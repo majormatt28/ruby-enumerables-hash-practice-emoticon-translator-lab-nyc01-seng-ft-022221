@@ -24,8 +24,6 @@ end
 
 def get_english_meaning(path, emoticons)
   final_emoticons = load_library(path)
-  results = final_emoticons["japanese"][emoticons]
-  if results == nil
-    results = "Sorry, that emoticon was not found"
+  final_emoticons.each do |key, description|
   end
 end
