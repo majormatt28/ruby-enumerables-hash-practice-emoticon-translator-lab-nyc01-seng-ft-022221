@@ -7,7 +7,6 @@ def load_library(emoticons)
 
   final_emoticons["english"] = {}
   final_emoticons["japanese"] = {}
-  final_emoticons
 
   emotes.each do |english_word, description|
     final_emoticons["english"][description.first] = description.last
