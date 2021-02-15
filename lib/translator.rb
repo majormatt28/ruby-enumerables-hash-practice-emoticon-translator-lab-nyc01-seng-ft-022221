@@ -8,9 +8,10 @@ def load_library(path)
   final_emoticons["english"] = {}
   final_emoticons["japanese"] = {}
 
-  emotes.each do |english_word, description|
-    final_emoticons[english_word] = {}
-    final_emoticons[english_word][:english] = " "
+  emotes.each do |key, description|
+    final_emoticons[key] = {}
+    final_emoticons[key][:english] = " "
+    final_emoticons[key][:japanese] = " "
   end
   final_emoticons
 end
